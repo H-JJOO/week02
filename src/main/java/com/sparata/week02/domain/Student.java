@@ -7,6 +7,7 @@ import javax.persistence.*;
 @NoArgsConstructor // 기본생성자를 대신 생성해준다.
 @Entity // 테이블임을 나타낸다.
 public class Student {
+
     @Id // ID 값, Primary Key로 사용하겠다 라는 뜻
     @GeneratedValue(strategy = GenerationType.AUTO) // 자동 증가 명령
     private Long id;
